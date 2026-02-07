@@ -208,15 +208,19 @@ graph TD
     D -->|Link to /| F
     D -->|Link to /profile| N["UserProfilePage<br/>(renders: User info)"]
     
-    style A fill:#e1f5ff
-    style B fill:#ffe0b2
-    style C fill:#fff3e0
-    style F fill:#fff3e0
-    style H fill:#f3e5f5
-    style J fill:#f3e5f5
-    style M fill:#e8f5e9
-    style N fill:#fce4ec
-    style G fill:#ffccbc
-    style L fill:#c8e6c9
+    style A fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style B fill:#1a202c,stroke:#4a5568,stroke-width:2px,color:#cbd5e0
+    style C fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style D fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style E fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style F fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style H fill:#1e3a1f,stroke:#2f5233,stroke-width:2px,color:#c6f6d5
+    style J fill:#1e3a1f,stroke:#2f5233,stroke-width:2px,color:#c6f6d5
+    style M fill:#0f172a,stroke:#1e293b,stroke-width:2px,color:#cbd5e0
+    style N fill:#3f2f5e,stroke:#553399,stroke-width:2px,color:#dcd2e8
+    style G fill:#2d3e5f,stroke:#4a5a7f,stroke-width:2px,color:#b8cce4
+    style L fill:#0f3a1f,stroke:#1e5a2f,stroke-width:2px,color:#a8e6c1
+    style I fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style K fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
 ```
 
