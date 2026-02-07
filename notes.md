@@ -176,6 +176,26 @@ Changing the channel:
 
 ---
 
+## App overview
+
+```mermaid
+graph LR
+    A["👥 Student List<br/>(HomePage)"] -->|Click a Student| B["📄 Student Details<br/>(StudentDetailsPage)"]
+    C["🏠 Home Button<br/>(Navbar)"] -->|Click| A
+    D["👤 Profile Button<br/>(Navbar)"] -->|Click| E["👨‍🏫 My Profile<br/>(UserProfilePage)"]
+    
+    style A fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style B fill:#1e3a1f,stroke:#2f5233,stroke-width:2px,color:#c6f6d5
+    style C fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style D fill:#2d3748,stroke:#4a5568,stroke-width:2px,color:#e2e8f0
+    style E fill:#3f2f5e,stroke:#553399,stroke-width:2px,color:#dcd2e8
+```
+
+
+
+
+---
+
 ## App Data Flow Diagram (Rendering & Props)
 
 ```mermaid
