@@ -1,12 +1,12 @@
+import { useParams, useNavigate } from "react-router-dom";
 import placeholderImage from "./../assets/placeholder.png";
 import studentsData from "./../assets/students.json";
 
 function StudentDetailsPage() {
+  const { studentId } = useParams();
+  const navigate = useNavigate();
 
-  // Find the current student profile by id.
-  // In this case, the student with id 1. The `studentId` is hard-coded for now.
-  // This could be a URL parameter from React Router, e.g. /students/:studentId
-  const studentId = "1";
+  // Find the current student profile by id from URL parameter
   const studentProfile = studentsData.find((student) => student._id === studentId);
 
   return (
@@ -67,7 +67,10 @@ function StudentDetailsPage() {
 
 
             {/* Back button */}
-            <button className="text-white px-4 py-2 rounded bg-green-500 hover:bg-green-600 transition duration-300 ease-in-out">
+            <button 
+              onClick={() => navigate(-1)}
+              className="text-white px-4 py-2 rounded bg-green-500 hover:bg-green-600 transition duration-300 ease-in-out"
+            >
               Back
             </button>
 

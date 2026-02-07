@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function UserProfilePage() {
+  const navigate = useNavigate();
+  
   const userProfile = {
     image: "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-cohort-tools-routing/profile-1.png",
     name: "Jane Doe",
@@ -33,7 +37,10 @@ function UserProfilePage() {
         )}
 
         {/* Back button */}        
-        <button className="text-white px-4 py-2 rounded bg-green-500 hover:bg-green-600 transition duration-300 ease-in-out">
+        <button 
+          onClick={() => navigate(-1)}
+          className="text-white px-4 py-2 rounded bg-green-500 hover:bg-green-600 transition duration-300 ease-in-out"
+        >
           Back
         </button>
         
